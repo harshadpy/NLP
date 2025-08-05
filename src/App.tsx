@@ -63,7 +63,7 @@ function App() {
                 <Sparkles className="w-8 h-8 text-white" />
               </div>
               <h1 className="text-5xl font-bold bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
-                NLP Resume Parser
+                Elite Resume AI
               </h1>
             </div>
             <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
