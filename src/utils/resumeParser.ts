@@ -143,7 +143,7 @@ const extractPersonalInfo = (text: string): PersonalInfo => {
   // Extract name (simplified heuristic)
   const lines = text.split('\n').filter(line => line.trim().length > 0);
   for (const line of lines.slice(0, 5)) {
-    if (line.length > 5 && line.length < 50 && /^[A-Za-z\s.-']+$/.test(line.trim())) {
+    if (line.length > 5 && line.length < 50 && /^[A-Za-z\s.\-']+$/.test(line.trim())) {
       const words = line.trim().split(/\s+/);
       if (words.length >= 2 && words.length <= 4) {
         personalInfo.name = line.trim();
